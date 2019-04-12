@@ -11,20 +11,20 @@ A rough outline of necessary steps thus far:
 + Enable SSH interface on PI
 + SSH in
 
-+ Install wiringPi: sudo apt-get install wiringpi
++ Install wiringPi: <i>sudo apt-get install wiringpi</i>
 
-+ Install VIM (the default editor I want git to utilize): sudo apt-get install vim
++ Install VIM (the default editor I want git to utilize): <i>sudo apt-get install vim</i>
 
-+ Install git for repo work: sudo apt-get install git-all
++ Install git for repo work: <i>sudo apt-get install git-all</i>
 
-+ Verify installation: git --version
++ Verify installation: <i>git --version</i>
 
-+ Set global identity, every commit with have the following data baked in: git config --global user.name "Your Name". AND THEN: git config --global user.email yourEmail@whateverdomain.com
++ Set global identity, every commit with have the following data baked in: <i>git config --global user.name "Your Name"</i> AND THEN: <i>git config --global user.email yourEmail@whateverdomain.com</i>
 
-+ Set default Git Editor: git config --global core.editor vim
++ Set default Git Editor: <i>git config --global core.editor vim</i>
 
 + Check your settings: <i>git config --list</i>
 
-+ Clone the repo we created earlier to our Pi: sudo git clone URL-TO-YOUR-REPO
++ Clone the repo we created earlier to our Pi: <i>sudo git clone URL-TO-YOUR-REPO</i>
 
-+ Remember to check status of any/all your files with: git status
++ Remember to check status of any/all your files with: <i>git status</i>
