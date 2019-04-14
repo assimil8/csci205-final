@@ -3,10 +3,10 @@ An introduction to the IOT using the Raspberry Pi and the GPIO interface. Demons
 
 ## A rough outline of necessary steps thus far:
 
-+ <u>Create a fresh repo on Git</u>
++ Create a fresh repo on Git
 	+ License it. In regards to the licensing assigned to my project, check out: https://www.gnu.org/licenses/quick-guide-gplv3.html
 
-+ <u>Necessary Pi Configuration</u>
++ Necessary Pi Configuration
 	+ [Set static IP on pi] (https://raspberrypi.stackexchange.com/questions/37920/how-do-i-setup-networking-wifi-static-ip-address/74428#74428)
 	+ Enable SSH interface on pi
 		- Enter *sudo raspi-config*
@@ -16,11 +16,11 @@ An introduction to the IOT using the Raspberry Pi and the GPIO interface. Demons
 		- Select 'Ok'
 		- Choose 'Finish'
 
-+ [<u>Obtain PuTTY</u>] (https://putty.org)
++ [Obtain PuTTY] (https://putty.org)
 
-+ [<u>SSH into pi using PuTTY</u>] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md) 
++ [SSH into pi using PuTTY] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md) 
 
-+ <u>Install wiringPi:</u><i>sudo apt-get install wiringpi</i>
++ Install wiringPi:<i>sudo apt-get install wiringpi</i>
 
 + Install VIM (the default editor I want git to utilize): <i>sudo apt-get install vim</i>
 
