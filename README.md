@@ -1,17 +1,26 @@
 # csci205-final
 An introduction to the IOT using the Raspberry Pi and the GPIO interface. Demonstrates c/c++ programming, use of a web server, HTML, and server-side scripting using PHP to interact with various hardware components (DS18B20 temp sensors and LEDs).
 
-<b>A rough outline of necessary steps thus far:</b>
+## A rough outline of necessary steps thus far:
 
-+ Create a fresh repo on Git
-+ License it.In regards to the licensing assigned to my project, check out: 
-		https://www.gnu.org/licenses/quick-guide-gplv3.html
++ <u>Create a fresh repo on Git</u>
+	+ License it. In regards to the licensing assigned to my project, check out: https://www.gnu.org/licenses/quick-guide-gplv3.html
 
-+ Set static IP on pi
-+ Enable SSH interface on PI
-+ SSH in (I used putty)
++ <u>Necessary Pi Configuration</u>
+	+ [Set static IP on pi] (https://raspberrypi.stackexchange.com/questions/37920/how-do-i-setup-networking-wifi-static-ip-address/74428#74428)
+	+ Enable SSH interface on pi
+		- Enter *sudo raspi-config*
+		- Select INTERFACING OPTIONS
+		- Navigate to and select SSH
+		- Choose 'Yes'
+		- Select 'Ok'
+		- Choose 'Finish'
 
-+ Install wiringPi: <i>sudo apt-get install wiringpi</i>
++ [<u>Obtain PuTTY</u>] (https://putty.org)
+
++ [<u>SSH into pi using PuTTY</u>] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md) 
+
++ <u>Install wiringPi:</u><i>sudo apt-get install wiringpi</i>
 
 + Install VIM (the default editor I want git to utilize): <i>sudo apt-get install vim</i>
 
