@@ -1,7 +1,7 @@
 # csci205-final
 An introduction to the IOT using the Raspberry Pi and the GPIO interface. Demonstrates c/c++ programming, use of a web server, HTML, and server-side scripting using PHP to interact with various hardware components (DS18B20 temp sensors and LEDs).
 
-A rough outline of necessary steps thus far:
+<b>A rough outline of necessary steps thus far:</b>
 
 + Create a fresh repo on Git
 + License it.In regards to the licensing assigned to my project, check out: 
@@ -9,7 +9,7 @@ A rough outline of necessary steps thus far:
 
 + Set static IP on pi
 + Enable SSH interface on PI
-+ SSH in
++ SSH in (I used putty)
 
 + Install wiringPi: <i>sudo apt-get install wiringpi</i>
 
@@ -25,6 +25,21 @@ A rough outline of necessary steps thus far:
 
 + Check your settings: <i>git config --list</i>
 
++ Make a directory on your pi to store our repo: <i>sudo mkdir whateverName</i>
+
++ Navigate into that directory<i> cd directory/name</i>
+
 + Clone the repo we created earlier to our Pi: <i>sudo git clone URL-TO-YOUR-REPO</i>
 
 + Remember to check status of any/all your files with: <i>git status</i>
+
++ Initialize the repo: <i>git init</i> and then <i>git add .</i> 
+
++ make branch: <i>sudo git branch branchName</i>
+
++ switch branch: <i>sudo git branch branchName</i>
+
++ verify branch switch: <i> git status </i>
+
++ Commit: <i>git commit -m "commit comments here"</i>
+
