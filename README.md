@@ -7,7 +7,7 @@ An introduction to the IOT using the Raspberry Pi and the GPIO interface. Demons
 	+ License it. In regards to the licensing assigned to my project, check out: https://www.gnu.org/licenses/quick-guide-gplv3.html
 
 + Necessary Pi Configuration
-	+ [Set static IP on pi] (https://raspberrypi.stackexchange.com/questions/37920/how-do-i-setup-networking-wifi-static-ip-address/74428#74428)
+	+ Set static IP on pi [https://raspberrypi.stackexchange.com/questions/37920/how-do-i-setup-networking-wifi-static-ip-address/74428#74428]
 	+ Enable SSH interface on pi
 		- Enter *sudo raspi-config*
 		- Select INTERFACING OPTIONS
