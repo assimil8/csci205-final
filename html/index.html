@@ -7,22 +7,16 @@
 <button onclick="offLED()">Turn LED Off</button>
 <script>
  function blinkLED(){
- alert("Script Execution\nClose Child Window
- \nWhen Finished");
- window.open("./cgi-bin/blink","",
- "width=200, height=100");
+ alert("Script Executing!\nClose Child Window when Finished");
+ window.open("./cgi-bin/blink","","width=200, height=100");
  }
  function onLED(){
- alert("Script Execution\nClose Child Window
- \nWhen Finished");
- window.open("./cgi-bin/on","",
- "width=200, height=100");
+ alert("Script Executing!\nClose Child Window when Finished");
+ window.open("./cgi-bin/ledOn","","width=200, height=100");
  }
  function offLED(){
- alert("Script Execution\nClose Child Window
- \nWhen Finished");
- window.open("./cgi-bin/off","",
- "width=200, height=100");
+ alert("Script Executing\nClose Child Window when Finished");
+ window.open("./cgi-bin/ledOff","","width=200, height=100");
  }
 </script>
 </body>
