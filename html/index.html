@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Button Bonanza</h1>
+<button onclick="blinkLED()">Blink</button>
+<button onclick="onLED()">Turn LED On</button>
+<button onclick="offLED()">Turn LED Off</button>
+<script>
+ function blinkLED(){
+ alert("Script Execution\nClose Child Window
+ \nWhen Finished");
+ window.open("./cgi-bin/blink","",
+ "width=200, height=100");
+ }
+ function onLED(){
+ alert("Script Execution\nClose Child Window
+ \nWhen Finished");
+ window.open("./cgi-bin/on","",
+ "width=200, height=100");
+ }
+ function offLED(){
+ alert("Script Execution\nClose Child Window
+ \nWhen Finished");
+ window.open("./cgi-bin/off","",
+ "width=200, height=100");
+ }
+</script>
+</body>
+</html>
