@@ -1,29 +1,34 @@
-<!DOCTYPE html>
 <html>
 <body>
-<h1>Button Bonanza</h1>
-<button onclick="blinkLED()">Blink</button>
-<button onclick="onLED()">Turn LED On</button>
-<button onclick="offLED()">Turn LED Off</button>
-<script>
- function blinkLED(){
- alert("Script Execution\nClose Child Window
- \nWhen Finished");
- window.open("./cgi-bin/blink","",
- "width=200, height=100");
- }
- function onLED(){
- alert("Script Execution\nClose Child Window
- \nWhen Finished");
- window.open("./cgi-bin/on","",
- "width=200, height=100");
- }
- function offLED(){
- alert("Script Execution\nClose Child Window
- \nWhen Finished");
- window.open("./cgi-bin/off","",
- "width=200, height=100");
- }
-</script>
+<!--------------------------------------
+ HTML form with radio selections
+ and Submit button.
+ Upon click executes php script
+---------------------------------------->
+<form
+action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"
+method="post">
+
+<h2>Button Bonanza:</h2>
+<dd><input type="radio" name="GPIOcontrol" value="b">Blink Light</dd>
+<dd><input type="radio" name="GPIOcontrol" value="on">Turn Light
+On</dd>
+<dd><input type="radio" name="GPIOcontrol" value="off">Turn Light
+Off</dd>
+<p>
+<input type="submit" name="submit" value="submit">
+</form>
 </body>
 </html>
+
+<?php if ($_SERVER["REQUEST_METHOD"] == "POST"){
+	if ($_POST["GPIOcontrol"]=="off")
+ 		echo "Turn Light Off<br>";
+ 	if ($_POST["GPIOcontrol"]=="on")
+ 		echo "Turn Light On<br>";
+ 	if ($_POST["GPIOcontrol"]=="b"){
+ 		echo "Light Blinked 10 Times<br>";
+ 		exec("./cgi-bin/blink");
+ 		}
+ 	}
+?>
