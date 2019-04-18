@@ -1,2 +1,2 @@
-67 01 4b 46 7f ff 0c 10 c4 : crc=c4 YES
-67 01 4b 46 7f ff 0c 10 c4 t=22437
+6b 01 4b 46 7f ff 0c 10 fb : crc=fb YES
+6b 01 4b 46 7f ff 0c 10 fb t=22687
