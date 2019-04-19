@@ -4,10 +4,7 @@
 #include "TEMP_SENSOR.cpp"
 #include <iostream>
 #include <string>
-#include <fstream>
-#include <iomanip>
-#include <cstring>
-#include <vector>
+
 using namespace std;
 
 
