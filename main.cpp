@@ -14,9 +14,10 @@ int main (int argc, char *argv[]){
 
 	//instantiate LED
 	LED a(LED1);
-	
+
 	//instantiate TEMP_SENSOR
 	TEMP_SENSOR b;
+
 	//var to store selection
 	string userInput;
 
