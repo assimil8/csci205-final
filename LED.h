@@ -2,8 +2,6 @@
 #ifndef LED_H
 #define LED_H
 
-#include <wiringPi.h>
-
 using namespace std;
 
 const int LED1 = 0;

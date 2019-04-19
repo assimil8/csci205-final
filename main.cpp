@@ -9,9 +9,6 @@ using namespace std;
 
 
 int main (int argc, char *argv[]){
-	const int LED1=0;
-
-
 	//instantiate LED
 	LED a(LED1);
 
