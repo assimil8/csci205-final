@@ -1,22 +1,22 @@
 //TEMP_SENSOR.h
 #ifndef TEMP_SENSOR_H
 #define TEMP_SENSOR_H
-
-#include<wiringPi.h>
-#include<string>
-#include<fstream>
-
-using namespace std;
-
+#include <cstring>
+#include <fstream>
+#include <iostream>
+#include <vector>
 class TEMP_SENSOR {
+	private: 
+		int tempDigits[5];
+		int counter;
+		int finalRead;
+		double a;
+		vector<int> numStorage;
+
 	public:
 		TEMP_SENSOR();
-		double tempDigits[5];
-		double readTemp();
-		double returnFahrenheit();
 		double returnCelsius();
-
+		double returnFahrenheit();
 };
-
 #endif
 		
