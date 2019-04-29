@@ -12,7 +12,7 @@ double TEMP_SENSOR::returnCelsius(){
 	ifstream outputTxtFile;
 	
 	//stores temp read in output.txt
-	system("more /sys/bus/w1/devices/*/w1_slave > output.txt");
+	system("cat /sys/bus/w1/devices/*/w1_slave > output.txt");
 	//searches output.txt for 5 consecutive integers and saves them in output1.txt
 	system("grep -Eo '[0-9]{5}' output.txt > output1.txt");
 	
@@ -37,6 +37,8 @@ double TEMP_SENSOR::returnCelsius(){
 	numStorage.push_back(finalRead);
 	//assign our double to be equal to the first element in our vector
 	double a = numStorage[0];
+	//delete output text files
+	system("rm out*.txt");
 	//math for celsius
 	a = a/1000;
 	return a;
