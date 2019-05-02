@@ -1,54 +1,44 @@
 # csci205-final
 An introduction to the IOT using the Raspberry Pi and the GPIO interface. Demonstrates c/c++ programming, use of a web server, HTML, and server-side scripting using PHP to interact with various hardware components (DS18B20 temp sensors and LEDs).
 
-## A rough outline of necessary steps thus far:
+## Prerequisites:
++ Install git: <i>https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</i>
++ Install g++
++ Verify that wiringPi is installed: 
+```gpio -v```	
++ Create a folder to work from/in: 
+```sudo mkdir dirName```
++ Situate yourself in that directory:
+```cd dirName```
++ Clone my repo using this command:
+```sudo git clone https://github.com/assimil8/csci205-final.git```
 
-+ Create a fresh repo on Git
-	+ License it. In regards to the licensing assigned to my project, check out: https://www.gnu.org/licenses/quick-guide-gplv3.html
+## Installing
++ Verify you are in the right directory
++ Compile executable: 
+```sudo g++ -Wall -o main main.cpp -lwiringPi```
++ Copy .exe into necessary dir: 
+```sudo cp main /var/www/html/main```
++ Set Chmod perms:
+```sudo chmod 4755 /var/www/html/main```
 
-+ Necessary Pi Configuration
-	+ Set static IP on pi: https://raspberrypi.stackexchange.com/questions/37920/how-do-i-setup-networking-wifi-static-ip-address/74428#74428
-	+ Enable SSH interface on pi
-		- Enter *sudo raspi-config*
-		- Select INTERFACING OPTIONS
-		- Navigate to and select SSH
-		- Choose 'Yes'
-		- Select 'Ok'
-		- Choose 'Finish'
+## Demonstration
++ Running .main without any flags brings up a do-while menu with switch statement(s). EX:
+```./main```
++ You can use the following flags: s, o, f, b, t
 
-+ Obtain PuTTY: https://putty.org
+```s  = returns status of LED ( LED.areYouOnOrOff() )```
 
-+ SSH into pi using PuTTY: https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md 
+```o = turns LED on ( LED.ignite() )```
 
-+ Install wiringPi: <i>sudo apt-get install wiringpi</i>
+```f  = turns LED off ( LED.extinguish() )```
 
-+ Install VIM (the default editor I want git to utilize): <i>sudo apt-get install vim</i>
+```b = accepts int from user and blinks that many times ( LED.blinkThisManyTimes(blinkCount) )```
 
-+ Install git for repo work: <i>sudo apt-get install git-all</i>
+```t  = returns temp in Fahrenheit (TEMP_SENSOR.returnFahrenheit() )```
 
-+ Verify installation: <i>git --version</i>
++ You may also utilize the web interface by visiting the Pi’s IP 
+```http://x.x.x.x```
 
-+ Set global identity, every commit with have the following data baked in: <i>git config --global user.name "Your Name"</i> AND THEN: <i>git config --global user.email yourEmail@whateverdomain.com</i>
-
-+ Set default Git Editor: <i>git config --global core.editor vim</i>
-
-+ Check your settings: <i>git config --list</i>
-
-+ Make a directory on your pi to store our repo: <i>sudo mkdir whateverName</i>
-
-+ Navigate into that directory<i> cd directory/name</i>
-
-+ Clone the repo we created earlier to our Pi: <i>sudo git clone URL-TO-YOUR-REPO</i>
-
-+ Remember to check status of any/all your files with: <i>git status</i>
-
-+ Initialize the repo: <i>git init</i> and then <i>git add .</i> 
-
-+ make branch: <i>sudo git branch branchName</i>
-
-+ switch branch: <i>sudo git checkout branchName</i>
-
-+ verify branch switch: <i> git status </i>
-
-+ Commit: <i>git commit -m "commit comments here"</i>
-
+## Documentation 
++ UML diagram, Wiring/hardware diagram and powerpoint can be found in the DOCUMENTATION folder.
